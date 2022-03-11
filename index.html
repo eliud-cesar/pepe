@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscelanea Acapulco</title>
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+
+    <!-- ESTILOS -->
+    <style>
+	img {width: 100%;}
+        .hide {display: none;}
+    </style>
+</head>
+<body>
+    <!-- PRESENTACION -->
+    <img src="./Banner.svg" />
+    <h1>Miscelanea Acapulco</h1>
+    <button id="open-system">Entrar al sistema</button>
+
+    <!-- LOADER -->
+    <h2 id="loader" class="hide">Cargando...</h2>
+
+    <!-- LOGICA DE ENTRAR AL SISTEMA -->
+    <script>
+        const button = document.getElementById("open-system")
+        const loader = document.getElementById("loader")
+        
+        button.addEventListener('click', () => {
+            button.classList.add('hide')
+            loader.classList.remove('hide')
+            setTimeout(() => location.href="/almacen.html", 2000)
+        })
+    </script>
+</body>
+</html>

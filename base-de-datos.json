@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "nombre": "Coca-Cola 500ml",
+        "codigo": "cola500",
+        "clasificacion": "Bebidas",
+        "descripccion": "Sabe mejor en familia",
+        "existencias": "12",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Dec-21-2023",
+        "precioCompra": "10",
+        "precioVenta": "15"
+    },
+    {
+        "id": 2,
+        "nombre": "Pepsi 400ml",
+        "codigo": "pepsi400",
+        "clasificacion": "Bebidas",
+        "descripccion": "Una pepsi bien fria",
+        "existencias": "15",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Jan-31-2023",
+        "precioCompra": "8",
+        "precioVenta": "12"
+    },
+    {
+        "id": 3,
+        "nombre": "Sabritas Adobadas",
+        "codigo": "sabritado",
+        "clasificacion": "Frituras",
+        "descripccion": "A que no puedes comer solo una",
+        "existencias": "6",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Apr-02-2023",
+        "precioCompra": "12",
+        "precioVenta": "16"
+    },
+    {
+        "id": 4,
+        "nombre": "Chiles enteros San Marcos",
+        "codigo": "chilessanm",
+        "clasificacion": "Enlatados",
+        "descripccion": "Los chiles mexicanos",
+        "existencias": "20",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Nov-15-2023",
+        "precioCompra": "20",
+        "precioVenta": "25"
+    },
+    {
+        "id": 5,
+        "nombre": "Pan bimbo",
+        "codigo": "panbimbo",
+        "clasificacion": "Pan",
+        "descripccion": "Sin el osito bimbo",
+        "existencias": "3",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Jan-31-2023",
+        "precioCompra": "15",
+        "precioVenta": "20"
+    },
+    {
+        "id": 6,
+        "nombre": "Sardinas",
+        "codigo": "sardinas",
+        "clasificacion": "Enlatados",
+        "descripccion": "Unas buenas sardinas",
+        "existencias": "7",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Dec-21-2023",
+        "precioCompra": "30",
+        "precioVenta": "35"
+    },
+    {
+        "id": 7,
+        "nombre": "Agua bonafon 600ml",
+        "codigo": "bonafon600",
+        "clasificacion": "Bebidas",
+        "descripccion": "El agua mas ligera",
+        "existencias": "30",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Dec-21-2023",
+        "precioCompra": "10",
+        "precioVenta": "15"
+    },
+    {
+        "id": 8,
+        "nombre": "Coca Cola 1.75L",
+        "codigo": "coca175",
+        "clasificacion": "Bebidas",
+        "descripccion": "Sabe mejor en familia",
+        "existencias": "12",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Dec-21-2023",
+        "precioCompra": "20",
+        "precioVenta": "25"
+    },
+    {
+        "id": 9,
+        "nombre": "Barcel takis fuego",
+        "codigo": "takisfuego",
+        "clasificacion": "frituras",
+        "descripccion": "Barcel la mejor o la peor",
+        "existencias": "5",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Dec-21-2023",
+        "precioCompra": "12",
+        "precioVenta": "15"
+    },
+    {
+        "id": 10,
+        "nombre": "Garrafon agua santander",
+        "codigo": "garrafongua",
+        "clasificacion": "Bebidas",
+        "descripccion": "Santander pero no el banco",
+        "existencias": "4",
+        "fechaCompra": "Dec-21-2022",
+        "fechaCaducidad": "Dec-21-2023",
+        "precioCompra": "13",
+        "precioVenta": "15"
+    }
+]
