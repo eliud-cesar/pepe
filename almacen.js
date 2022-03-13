@@ -47,7 +47,7 @@ const DeatilsProducts = data => {
 
 
 // CONSULTAR LA BASE DE DATOS
-fetch('/base-de-datos.json')
+fetch('./base-de-datos.json')
     .then(res => res.json())
     .then(data => {
         let dataBase = data
