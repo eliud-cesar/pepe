@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .not {
+            pointer-events: none;
+            user-select: none;
+        }
+        .red {color: red;}
+        .green {color: green;}
+    </style>
 </head>
 <body>
-    VENTAS
+    <!-- Encabezado -->
+    <header>
+        <h2>Ventas</h2>
+        <h2><a href="./almacen.html">Inventario</a></h2>
+        <p><a href="./index.html">Cerrar sistema</a></p>
+    </header>
+
+    <main>
+        <h3 class="sale-messaje" id="sale-messaje"></h3>
+        <!-- Primera seccion -->
+        <section>
+            <article>
+                <form id="sale-form">
+                    <label>Codigo del producto
+                        <input name="sale_code" type="text" placeholder="Introduce el codigo del producto">
+                    </label>
+                    <label>Cantidad
+                        <input name="sale_quantity" min="1" value="1" type="number" placeholder="Introduce la cantidad a comprar">
+                    </label>
+                </form>
+            </article>
+
+            <article id="sale-description"></article>
+            <article id="sale-clasification"></article>
+            <article id="sale-date_time"></article>
+        </section>
+        
+        <!-- Segunda seccion -->
+        <section>
+            <h2 id="sale-name"></h2>
+            <article id="sale-date_expiry"></article>
+            <article id="sale-price"></article>
+            <article id="sale-total"></article>
+        </section>
+
+        <button id="sale-button_complete">Finalizar compra</button>
+    </main>
+
+    <script src="./ventas.js"></script>
 </body>
 </html>
