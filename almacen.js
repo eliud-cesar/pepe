@@ -12,7 +12,7 @@ const priceSale = document.getElementById('price-sale')
 // LISTANDO LOS NOMBRES DEL PRODUCTOS
 const forData = (array) => {
     array.forEach(data => {
-        const htmlProduct = `<p id="${data.codigo}" >${data.nombre}</p>`
+        const htmlProduct = `<p class="pointer" id="${data.codigo}" >${data.nombre}</p>`
         Productsname.insertAdjacentHTML('beforeend', htmlProduct)
     })
 }
@@ -55,3 +55,12 @@ fetch('./base-de-datos.json')
         DeatilsProducts(dataBase)
     })
     .catch(err => console.log(err))
+
+
+// ATAJO DE TECLADO PARA IR A VENTAS
+document.addEventListener('keydown', e => {
+    let Letter = e.key.toLowerCase()
+    if(Letter === "a" && e.altKey === true) {
+        document.location.href = "./ventas.html"
+    }
+})

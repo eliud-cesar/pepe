@@ -41,6 +41,7 @@ SaleForm.addEventListener('change', () => {
         if(!response) {
             SaleMessaje.innerText = "Este producto no existe"
             SaleMessaje.style.color = 'red'
+            SaleMessaje.style.borderBottom = '1px solid red'
             SaleDescription.innerText = ""
             SaleClasification.innerText = ""
             SaleDateTime.innerText = ""
@@ -51,9 +52,10 @@ SaleForm.addEventListener('change', () => {
             TrueProduct = false
             
         // si las cantidad a vender es cero
-        } else if(SaleQuantity === 0) {
-            SaleMessaje.innerText = "¿Vas a vender o que?"
-            SaleMessaje.style.color = 'red'
+    } else if(SaleQuantity === 0) {
+        SaleMessaje.innerText = "¿Vas a vender o que?"
+        SaleMessaje.style.color = 'red'
+        SaleMessaje.style.borderBottom = '1px solid red'
             SaleTotal.innerText = ""
             TrueProduct = false
             
@@ -61,6 +63,7 @@ SaleForm.addEventListener('change', () => {
         } else if(SaleQuantity > parseInt(response.existencias)) {
             SaleMessaje.innerText = "No puedes vender mas de lo que no tienes"
             SaleMessaje.style.color = 'red'
+            SaleMessaje.style.borderBottom = '1px solid red'
             SaleTotal.innerText = ""
             TrueProduct = false
             
@@ -68,10 +71,11 @@ SaleForm.addEventListener('change', () => {
         } else if(response) {
             SaleMessaje.innerText = "Puedes vender"
             SaleMessaje.style.color = 'green'
+            SaleMessaje.style.borderBottom = '1px solid green'
             // se muestran lo datos
             SaleDescription.innerText = response.descripccion
             SaleClasification.innerText = "Clasificacion: " + response.clasificacion
-            SaleDateTime.innerText = "Hora: " + Date()
+            SaleDateTime.innerText = "Fecha: " + moment().format('LLL')
             SaleName.innerText = response.nombre
             SaleDateExpiry.innerText = "Fecha de caducidad: " + response.fechaCaducidad
             SalePrice.innerText = "Precio unitario: $" + response.precioVenta
@@ -91,5 +95,16 @@ SaleButtonEnd.addEventListener('click', () => {
         alert(`Has vendido: ${SaleForm.sale_quantity.value} ${SaleProduct.nombre}. Te queda(n) ${SaleResultProduct} en stock`)
     } else {
         alert('Corrige el error antes de vender')
+    }
+})
+
+
+// ATAJO DE TECLADO PARA IR A ALMACEN
+document.addEventListener('keydown', e => {
+    if(e.key) {
+        let Letter = e.key.toLowerCase()
+        if(Letter === "s" && e.altKey === true) {
+            document.location.href = "./almacen.html"
+        }
     }
 })

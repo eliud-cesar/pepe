@@ -5,51 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .red {
-            color: red;
-        }
-
-        main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    </style>
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <h2><a href="./ventas.html">Ventas</a></h2>
-        <h2>Inventario</h2>
+        <section>
+            <h2><a href="./ventas.html">Ventas</a></h2>
+            <h2>Inventario</h2>
+        </section>
         <p><a href="./index.html">Cerrar sistema</a></p>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Primera Seccion -->
         <section>
             <article>
                 <h2>Codigo del producto:</h2>
-                <div class="red" id="code-product"></div>
+                <div class="data-product code" id="code-product"></div>
             </article>
 
             <article>
                 <h2>Clasificacion:</h2>
-                <div class="red" id="clasification"></div>
+                <div class="data-product" id="clasification"></div>
             </article>
 
             <article>
                 <h2>Existencias:</h2>
-                <div class="red" id="stock"></div>
+                <div class="data-product" id="stock"></div>
             </article>
 
             <article>
                 <h2>Fecha de la compra:</h2>
-                <div class="red" id="date-buy"></div>
+                <div class="data-product" id="date-buy"></div>
             </article>
 
             <article>
                 <h2>Precio de compra</h2>
-                <div class="red" id="price-buy"></div>
+                <div class="data-product price" id="price-buy"></div>
             </article>
         </section>
 
@@ -57,22 +50,22 @@
         <section>
             <article>
                 <h2>Nombre del producto:</h2>
-                <div id="products-name"></div>
+                <div class="list-products" id="products-name"></div>
             </article>
 
             <article>
                 <h2>Descripccion:</h2>
-                <div class="red" id="description"></div>
+                <div class="data-product" id="description"></div>
             </article>
 
             <article>
                 <h2>Fecha de caducidad:</h2>
-                <div class="red" id="date-expiry"></div>
+                <div class="data-product" id="date-expiry"></div>
             </article>
 
             <article>
                 <h2>Precio de venta:</h2>
-                <div class="red" id="price-sale"></div>
+                <div class="data-product price" id="price-sale"></div>
             </article>
         </section>
     </main>
